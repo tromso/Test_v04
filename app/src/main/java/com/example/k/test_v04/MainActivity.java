@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
     EditText text1;
     String s1 = "llll";
+    String s2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
