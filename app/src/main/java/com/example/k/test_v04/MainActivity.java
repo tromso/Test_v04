@@ -2,7 +2,6 @@ package com.example.k.test_v04;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -20,12 +19,9 @@ public class MainActivity extends Activity {
 
         text1 = (EditText)findViewById(R.id.editText);
         Button button1 = (Button)findViewById(R.id.button);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),s1 + text1.getText().toString(), Toast.LENGTH_SHORT);
-                toast.show();
-            }
+        button1.setOnClickListener(v -> {
+            Toast toast = Toast.makeText(getApplicationContext(),s1 + text1.getText().toString(), Toast.LENGTH_SHORT);
+            toast.show();
         });
 
 
